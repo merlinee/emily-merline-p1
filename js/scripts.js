@@ -18,9 +18,11 @@ var nap = "Take a nap.";
 //Both buttons
 var again = "Play again?";
 
+//counters for winning and losing
 var win = 0;
 var loss = 0;
 
+//setting initial text for story
 var el1 = document.getElementById("buttonOne");
 el1.textContent = left;
 
@@ -30,6 +32,9 @@ el2.textContent = right;
 var el4 = document.getElementById("story");
 el4.textContent = inWoods;
 
+
+//What happens conditionally when first button is clicked, based on text on button
+//changes text in paragraph, button, images, counts loss if loss is clicked
 function nextThingOne()
 {
   var el3 = document.getElementById("buttonOne");
@@ -79,6 +84,8 @@ function nextThingOne()
     }
 }
 
+//What happens conditionally when second button is clicked, based on text on button
+//changes text in paragraph, button, images, counts win or loss if win or loss is clicked
 function nextThingTwo()
 {
   var el3 = document.getElementById("buttonTwo");
@@ -130,19 +137,21 @@ function nextThingTwo()
   }
 }
 
-
+//function to change paragrpah text
 function changeText(words)
 {
     var el4 = document.getElementById("story");
     el4.textContent = words;
 }
 
+//function to change button one text
 function changeButtonOne(aButton)
 {
   var el1 = document.getElementById("buttonOne");
   el1.textContent = aButton;
 }
 
+//function to change button two text
 function changeButtonTwo(bButton)
 {
   var el2 = document.getElementById("buttonTwo");
