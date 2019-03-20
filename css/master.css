@@ -1,0 +1,44 @@
+body {
+font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+font-family: 'Playfair Display', serif;
+}
+
+
+.button {
+  background-color: black;
+  color: red;
+  padding: 5px 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+
+.game {
+  line-height: 200px;
+  height: 200px;
+  text-align: center;
+  width: 50%;
+  background-color: gray;
+}
+
+.game p {
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+img  {
+  height: 150px;
+  width: 150px;
+  float: left;
+}
+
+ul {
+  background-color: gray;
+  width: 50%;
+
+}
